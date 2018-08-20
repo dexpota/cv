@@ -1,10 +1,11 @@
 #!/usr/bin/env python
 """autocv.
 Usage:
-    autocv <cv_metadata> [options]
+    autocv <cv_metadata> -o <output> [options]
 
 Options:
     -t <template>, --template-directory <template>  Template search directory.
+    -f  Force output overwrite.
 """
 
 import yaml
@@ -23,7 +24,10 @@ def main():
         current_directory = os.path.dirname(os.path.abspath(__file__))
         template_directory = os.path.join(current_directory, "../templates")
 
-    # TODO check if file exists
+    if not os.path.exists(cv_metadata):
+        print("File {filename} doesn't exist.".format(filename=cv_metadata))
+        exit(-1)
+
     with open(cv_metadata, "r") as fp:
         cv_data = yaml.load(fp.read())
 
@@ -35,7 +39,14 @@ def main():
         #pprint(section["content"])
         sections += template.render(**section["content"])
 
-    with open("cv.md", "w") as fp:
+    output = arguments["<output>"]
+    force = arguments["-f"]
+
+    if os.path.exists(output) and not force:
+        print("File {filename} already exists.".format(filename=output))
+        exit(-1)
+
+    with open(output, "w") as fp:
         fp.write("".join(sections))
 
 if __name__ == "__main__":
