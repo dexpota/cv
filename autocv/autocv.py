@@ -34,10 +34,9 @@ def main():
     env = Environment(loader=FileSystemLoader(template_directory))
 
     sections = []
-    for section in cv_data:
-        template = env.get_template(section["template"])
-        #pprint(section["content"])
-        sections += template.render(**section["content"])
+    template_name = cv_data["template"]
+    template = env.get_template(template_name)
+    rendered = template.render(**cv_data)
 
     output = arguments["<output>"]
     force = arguments["-f"]
@@ -47,7 +46,7 @@ def main():
         exit(-1)
 
     with open(output, "w") as fp:
-        fp.write("".join(sections))
+        fp.write(rendered)
 
 if __name__ == "__main__":
     main()
