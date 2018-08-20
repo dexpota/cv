@@ -1,0 +1,26 @@
+- name: "technical_skills"
+  template: "technical_skills.md"
+  content:
+      programming_languages: ["C", "C++", "C#", "Java", "Python"]
+      markup_languages: ["LaTex", "HTML", "CSS", "Markdown"]
+      others:
+        - title: "Libraries and Frameworks"
+          items: ["Qt4", "OpenGL", "libwebm", "OpenSG"]
+- name: "general_skills"
+  template: "general_skills.md"
+  content:
+    languages: ["Italian", "English"]
+- name: "work_experience"
+  template: "work_experience.md"
+  content:
+    experiences:
+        - title: "Work Experience" 
+          start: "2011 Aprile"
+          end: "2011 Luglio"
+- name: "education"
+  template: "education.md"
+  content:  
+    degrees:
+        - graduated_with: "Laurea di primo livello in Ingegneria Informatica"
+          graduated_from: "Politecnico di Torino"
+          graduated_in: "2012"
