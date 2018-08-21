@@ -1,6 +1,6 @@
 template: "cv.md"
 technical_skills:
-      programming_languages: ["C", "\\Cpp", "\\CC", "\\CS", "Java", "Python"]
+      programming_languages: ["C", "\\Cpp", "\\CS", "Java", "Python"]
       markup_languages: ["LaTex", "HTML", "CSS", "Markdown"]
       others:
         - title: "Libraries and Frameworks"

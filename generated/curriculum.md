@@ -22,7 +22,6 @@ English,
 ### Programming languages
 C,
 \Cpp,
-\CC,
 \CS,
 Java,
 Python,
