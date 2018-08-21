@@ -1,29 +1,38 @@
 ---
-title: Destro Fabrizio
+title: Curriculum Vitae
+author: Destro Fabrizio
+colorlinks: True
 ---
+
 # About
+
+### Contacts
+
+[destro.fabrizio@gmail.com](destro.fabrizio@gmail.com) --- [https://www.destro.me](https://www.destro.me) --- [https://github.com/dexpota](https://github.com/dexpota)
 
 # Skills
 ##  General skills
+
+### Languages
 {% for language in general_skills.languages -%}
-	- {{language}}
+	{{language}}
 {% endfor %}
 
 ## Technical skills
 ### Programming languages
 {% for language in technical_skills.programming_languages -%}
-	- {{language}}
+	{{language}}
 {% endfor %}
 
 ### Markup languages
 {% for language in technical_skills.markup_languages -%}
-	- {{language}}
+	{{language}}
 {% endfor %}
 
 {% for other in technical_skills.others %}
 ### {{other.title}}
 {% for item in other["items"] -%}
-	- {{item}}
+	{{item}}
 {% endfor %}
 {% endfor %}
 

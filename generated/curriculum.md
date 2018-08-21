@@ -1,36 +1,45 @@
 ---
-title: Destro Fabrizio
+title: Curriculum Vitae
+author: Destro Fabrizio
+colorlinks: True
 ---
+
 # About
+
+### Contacts
+
+[destro.fabrizio@gmail.com](destro.fabrizio@gmail.com) --- [https://www.destro.me](https://www.destro.me) --- [https://github.com/dexpota](https://github.com/dexpota)
 
 # Skills
 ##  General skills
-- Italian
-- English
+
+### Languages
+Italian
+English
 
 
 ## Technical skills
 ### Programming languages
-- C
-- C++
-- C#
-- Java
-- Python
+C
+C++
+C#
+Java
+Python
 
 
 ### Markup languages
-- LaTex
-- HTML
-- CSS
-- Markdown
+LaTex
+HTML
+CSS
+Markdown
 
 
 
 ### Libraries and Frameworks
-- Qt4
-- OpenGL
-- libwebm
-- OpenSG
+Qt4
+OpenGL
+libwebm
+OpenSG
 
 
 

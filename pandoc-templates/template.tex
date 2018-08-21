@@ -56,6 +56,11 @@ $if(section-titles)$
 }
 $endif$
 $endif$
+
+\usepackage{titling}
+\usepackage{titlesec}
+\usepackage[margin=1.25in]{geometry}
+
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
@@ -319,45 +324,96 @@ $endif$
 $if(title)$
 \title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
 $endif$
+
 $if(subtitle)$
 \providecommand{\subtitle}[1]{}
 \subtitle{$subtitle$}
 $endif$
+
 $if(author)$
 \author{$for(author)$$author$$sep$ \and $endfor$}
 $endif$
+
 $if(institute)$
 \providecommand{\institute}[1]{}
 \institute{$for(institute)$$institute$$sep$ \and $endfor$}
 $endif$
+
 \date{$date$}
+
 $if(beamer)$
 $if(titlegraphic)$
 \titlegraphic{\includegraphics{$titlegraphic$}}
 $endif$
+
 $if(logo)$
 \logo{\includegraphics{$logo$}}
 $endif$
-$endif$
+$endif$ % endif(beamer)
+
+
+\renewcommand{\maketitle}{
+\begin{center}
+{
+	\Huge\bfseries
+	\theauthor
+}
+
+{	
+	\large\bfseries
+	\thetitle
+}
+\vspace{.25em}
+
+\today
+
+\vspace{1em}
+
+\end{center}
+} % \maketitle
+
+
+\titleformat{\section}[frame]
+{\LARGE\bfseries}
+{}
+{0em}
+{\filcenter}
+
+\titleformat{\subsection}
+{\bfseries\Large}
+{}
+{0em}
+{}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}
+
+\titlespacing{\subsubsection}
+{0em}{.20em}{1em}
 
 \begin{document}
+
 $if(title)$
 $if(beamer)$
 \frame{\titlepage}
 $else$
 \maketitle
 $endif$
+
 $if(abstract)$
 \begin{abstract}
 $abstract$
 \end{abstract}
 $endif$
-$endif$
+$endif$ % endif(title)
 
 $for(include-before)$
 $include-before$
-
 $endfor$
+
 $if(toc)$
 $if(beamer)$
 \begin{frame}
@@ -373,12 +429,15 @@ $endif$
 }
 $endif$
 $endif$
+
 $if(lot)$
 \listoftables
 $endif$
+
 $if(lof)$
 \listoffigures
 $endif$
+
 $body$
 
 $if(natbib)$
@@ -412,8 +471,8 @@ $else$
 $endif$
 
 $endif$
+
 $for(include-after)$
 $include-after$
-
 $endfor$
 \end{document}
