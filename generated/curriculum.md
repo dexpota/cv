@@ -8,38 +8,39 @@ colorlinks: True
 
 ### Contacts
 
-[destro.fabrizio@gmail.com](destro.fabrizio@gmail.com) --- [https://www.destro.me](https://www.destro.me) --- [https://github.com/dexpota](https://github.com/dexpota)
+[destro.fabrizio@gmail.com](destro.fabrizio@gmail.com) --- [https://www.destro.me](https://www.destro.me) --- [https://github.com/dexpota](https://github.com/dexpota) --- [https://www.linkedin.com/in/fdestro/](https://www.linkedin.com/in/fdestro/)
 
 # Skills
 ##  General skills
 
 ### Languages
-Italian
-English
+Italian,
+English,
 
 
 ## Technical skills
 ### Programming languages
-C
-C++
-C#
-Java
-Python
+C,
+\Cpp,
+\CC,
+\CS,
+Java,
+Python,
 
 
 ### Markup languages
-LaTex
-HTML
-CSS
-Markdown
+LaTex,
+HTML,
+CSS,
+Markdown,
 
 
 
 ### Libraries and Frameworks
-Qt4
-OpenGL
-libwebm
-OpenSG
+Qt4,
+OpenGL,
+libwebm,
+OpenSG,
 
 
 

@@ -60,6 +60,8 @@ $endif$
 \usepackage{titling}
 \usepackage{titlesec}
 \usepackage[margin=1.25in]{geometry}
+\usepackage{relsize}
+\usepackage{xspace}
 
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
@@ -351,6 +353,18 @@ $if(logo)$
 $endif$
 $endif$ % endif(beamer)
 
+\newcommand{\CC}
+{
+C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\relsize{-3}{\textbf{+}}}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\relsize{-3}{\textbf{+}}}
+}
+
+\newcommand{\Rplus}{\protect\hspace{-.1em}\protect\raisebox{.35ex}{\smaller{\smaller\textbf{+}}}}
+\newcommand{\Cpp}{\mbox{C\Rplus\Rplus}\xspace}
+
+\newcommand{\CS}
+{
+C\nolinebreak\hspace{-.05em}\raisebox{.38ex}{\relsize{-2}\bf \#}
+}
 
 \renewcommand{\maketitle}{
 \begin{center}
