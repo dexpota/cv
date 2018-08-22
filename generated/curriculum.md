@@ -21,8 +21,8 @@ English,
 ## Technical skills
 ### Programming languages
 C,
-\Cpp,
-\CS,
+Cpp,
+CS,
 Java,
 Python,
 
