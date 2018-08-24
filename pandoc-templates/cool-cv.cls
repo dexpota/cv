@@ -1,8 +1,12 @@
-% Identification
-\ProvidesClass{cool-cv}[2017/02/05 v1.6.1 Cool Curriculum Vitae Class]
+%==============================================================================%
+%                               % Identification                               %
+%==============================================================================%
+\ProvidesClass{cool-cv}[2017/02/05 v1.0 Cool Curriculum Vitae Class]
 \NeedsTeXFormat{LaTeX2e}
 
-% Class Options
+%==============================================================================%
+%                               % Class Options                                %
+%==============================================================================%
 \LoadClass{article}
 
 % Options for draft or final
@@ -15,6 +19,10 @@
 % Executes the code for each option and must be inserted after all the
 % option-handling commands were typed
 \ProcessOptions\relax
+
+%==============================================================================%
+%                             Third party packages                             %
+%==============================================================================%
 
 % Needed to make fixed length table
 \RequirePackage{array}
@@ -52,12 +60,10 @@
 \RequirePackage{parskip}
 % Needed to deal hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
-\hypersetup{%
-  pdftitle={},
-  pdfauthor={},
-  pdfsubject={},
-  pdfkeywords={}
-}
+
+%==============================================================================%
+%                                    Colors                                    %
+%==============================================================================%
 
 % Gray-scale colors
 \definecolor{white}{HTML}{FFFFFF}
@@ -87,21 +93,34 @@
 \definecolor{awesome-darknight}{HTML}{131A28}
 \colorlet{awesome}{awesome-red}
 
+
+%==============================================================================%
+%                                    Fonts                                     %
+%==============================================================================%
+
 \newcommand*{\footerfont}{\sourcesanspro}
 \newcommand*{\bodyfont}{\sourcesanspro}
 \newcommand*{\bodyfontlight}{\sourcesansprolight}
 
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\color{graytext} #1}}
+%==============================================================================%
+%                                    Styles                                    %
+%==============================================================================%
+
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\bfseries\color{graytext} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\bfseries\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 
+%==============================================================================%
+%                                  Properties                                  %
+%==============================================================================%
+
 % Define photo ID
 % Usage: \photo[circle|rectangle,edge|noedge,left|right]{<path-to-image>}
 \newcommand{\photo}[2][circle,edge,left]{%
-  \def\@photo{#2}
+  \def\@photo{#2}%
   \@for\tmp:=#1\do{%
     \ifthenelse{\equal{\tmp}{circle} \or \equal{\tmp}{rectangle}}%
       {\let\@photoshape\tmp}{}%
@@ -111,6 +130,8 @@
       {\let\@photoalign\tmp}{}%
   }%
 }
+
+% Default values
 \def\@photoshape{circle}
 \def\@photoedge{edge}
 \def\@photoalign{left}
@@ -179,7 +200,6 @@
 % Usage: \xing{<xing name>}
 \newcommand*{\xing}[1]{\def\@xing{#1}}
 
-% Defines writer's twitter (optional)
 % Defines writer's extra informations (optional)
 % Usage: \extrainfo{<extra informations>}
 \newcommand*{\extrainfo}[1]{\def\@extrainfo{#1}}
@@ -188,40 +208,10 @@
 % Usage: \quote{<quote>}
 \renewcommand*{\quote}[1]{\def\@quote{#1}}
 
-% Defines recipient's information (cover letter only)
-% Usage: \recipient{<recipient name>}{<recipient address>}
-% Usage: \recipientname{<recipient name>}
-% Usage: \recipientaddress{<recipient address>}
-\newcommand*{\recipient}[2]{\def\@recipientname{#1}\def\@recipientaddress{#2}}
-\newcommand*{\recipientname}[1]{\def\@recipientname{#1}}
-\newcommand*{\recipientaddress}[1]{\def\@recipientaddress{#1}}
 
-% Defines the title for letter (cover letter only, optional)
-% Usage: \lettertitle{<title>}
-\newcommand*{\lettertitle}[1]{\def\@lettertitle{#1}}
-
-% Defines the date for letter (cover letter only)
-% Usage: \letterdate{<date>}
-\newcommand*{\letterdate}[1]{\def\@letterdate{#1}}
-
-% Defines a message of opening for letter (cover letter only)
-% Usage: \letteropening{<message>}
-\newcommand*{\letteropening}[1]{\def\@letteropening{#1}}
-
-% Defines a message of closing for letter (cover letter only)
-% Usage: \letterclosing{<message>}
-\newcommand*{\letterclosing}[1]{\def\@letterclosing{#1}}
-
-% Defines an enclosure for letter (cover letter only, optional)
-% Usage: \letterenclosure[<enclosure name>]{<enclosure>}
-\newcommand*{\letterenclname}[1][Enclosure]{\def\@letterenclname{#1}}
-\newcommand*{\letterenclosure}[2][]{%
-  % if an optional argument is provided, use it to redefine \enclname
-  \ifthenelse{\equal{#1}{}}{}{\def\@letterenclname{#1}}
-  \def\@letterenclosure{#2}
-}
-
-
+%==============================================================================%
+%                                   Spacing                                    %
+%==============================================================================%
 
 \newcommand{\acvHeaderNameDelim}{\space}
 \newcommand{\acvHeaderAfterNameSkip}{.4mm}
@@ -237,19 +227,22 @@
 \newcommand{\acvSectionContentTopSkip}{2.5mm}
 
 
+%==============================================================================%
+%                               Custom commands                                %
+%==============================================================================%
+
 \newcommand*{\drawphoto}{%
-	\ifthenelse{\isundefined{\@photo}} {
-	}{%
-		\newlength{\photodim}
+	\ifthenelse{\isundefined{\@photo}} {} {%
+		\newlength{\photodim}%
 		\ifthenelse{\equal{\@photoshape}{circle}}{%
 			\setlength{\photodim}{1.3cm}
 		}{%
 			\setlength{\photodim}{1.8cm}
 		}%
 		\ifthenelse{\equal{\@photoedge}{edge}}{%
-			\def\@photoborder{darkgray}
+			\def\@photoborder{darkgray}%
 		}{%
-			\def\@photoborder{none}
+			\def\@photoborder{none}%
 		}%
 		\begin{tikzpicture}%
 			\node[\@photoshape, draw=\@photoborder, line width=0.3mm, inner sep=\photodim, fill overzoom image=\@photo] () {};
@@ -274,7 +267,7 @@
   \end{minipage}
   \begin{minipage}[c]{\headertextwidth}
     \ifthenelse{\equal{#1}{L}}{\raggedright}{\ifthenelse{\equal{#1}{R}}{\raggedleft}{\centering}}
-    \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
+    \headerfirstnamestyle{\@firstname}\acvHeaderNameDelim\headerlastnamestyle{\@lastname}%
     \\[\acvHeaderAfterNameSkip]%
     \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\[\acvHeaderAfterPositionSkip]}}%
     \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\[\acvHeaderAfterAddressSkip]}}%
