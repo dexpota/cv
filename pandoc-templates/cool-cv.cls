@@ -62,6 +62,24 @@
 \RequirePackage[hidelinks,unicode]{hyperref}
 
 %==============================================================================%
+%                                    Layout                                    %
+%==============================================================================%
+
+%% Page Layout
+% Configure page margins with geometry
+\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+
+%% Header & Footer
+% Set offset to each header and footer
+\fancyhfoffset{0em}
+% Remove head rule
+\renewcommand{\headrulewidth}{0pt}
+% Clear all header & footer fields
+\fancyhf{}
+% Enable if you want to make header or footer using fancyhdr
+\pagestyle{fancy}
+
+%==============================================================================%
 %                                    Colors                                    %
 %==============================================================================%
 
@@ -124,6 +142,9 @@
 \newcommand*{\headerquotestyle}[1]{%
 	{\fontsize{9pt}{1em}\bodyfont\color{darktext}\itshape #1}%
 }
+\newcommand*{\footerstyle}[1]{%
+	{\fontsize{8pt}{1em}\footerfont\color{lighttext}\scshape #1}
+}
 
 %==============================================================================%
 %                                  Properties                                  %
@@ -154,6 +175,7 @@
 % Usage: \lastname{<lastname>}
 % Usage: \familyname{<familyname>}
 \newcommand*{\name}[2]{\def\@firstname{#1}\def\@lastname{#2}}
+\newcommand*{\getname}{\@firstname{} \@lastname}
 \newcommand*{\firstname}[1]{\def\@firstname{#1}}
 \newcommand*{\lastname}[1]{\def\@lastname{#1}}
 \newcommand*{\familyname}[1]{\def\@lastname{#1}}
@@ -366,5 +388,14 @@
   \begin{minipage}[c]{\headerphotowidth}% Draw photo on the right
     \ifthenelse{\equal{\@photoalign}{right}}{\raggedleft\drawphoto}{}
   \end{minipage}
+}
+
+% Define a footer for CV
+% Usage: \makecvfooter{<left>}{<center>}{<right>}
+\newcommand*{\makecvfooter}[3]{%
+  \fancyfoot{}
+  \fancyfoot[L]{\footerstyle{#1}}
+  \fancyfoot[C]{\footerstyle{#2}}
+  \fancyfoot[R]{\footerstyle{#3}}
 }
 
