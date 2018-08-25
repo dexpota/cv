@@ -111,7 +111,14 @@
 \definecolor{awesome-darknight}{HTML}{131A28}
 \colorlet{awesome}{awesome-red}
 
+% Boolean value to switch section color highlighting
+\newbool{acvSectionColorHighlight}
+\setbool{acvSectionColorHighlight}{true}
 
+% Awesome section color
+\def\@sectioncolor#1#2#3{%
+  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+}
 %==============================================================================%
 %                                    Fonts                                     %
 %==============================================================================%
@@ -145,7 +152,9 @@
 \newcommand*{\footerstyle}[1]{%
 	{\fontsize{8pt}{1em}\footerfont\color{lighttext}\scshape #1}
 }
-
+\newcommand*{\sectionstyle}[1]{%
+	{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}
+}
 %==============================================================================%
 %                                  Properties                                  %
 %==============================================================================%
@@ -264,6 +273,9 @@
 %==============================================================================%
 %                               Custom commands                                %
 %==============================================================================%
+
+% Use to draw horizontal line with specific thickness
+\def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 
 \newcommand*{\drawphoto}{%
 	\ifthenelse{\isundefined{\@photo}} {} {%
@@ -399,3 +411,11 @@
   \fancyfoot[R]{\footerstyle{#3}}
 }
 
+% Define a section for CV
+% Usage: \cvsection{<section-title>}
+\newcommand{\cvsection}[1]{%
+  \vspace{\acvSectionTopSkip}
+  \sectionstyle{#1}
+  \phantomsection
+  \color{gray}\vhrulefill{0.9pt}
+}
