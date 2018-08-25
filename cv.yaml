@@ -1,4 +1,12 @@
 template: "cv.md"
+metadata:
+    firstname: "Fabrizio"
+    lastname: "Destro"
+    position: "Software Engineer"
+    email: "destro.fabrizio@gmail.com"
+    github: "dexpota"
+    linkedin: "fdestro"
+    homepage: "https://www.destro.me"
 technical_skills:
       programming_languages: ["C", "Cpp", "CS", "Java", "Python"]
       markup_languages: ["LaTex", "HTML", "CSS", "Markdown"]

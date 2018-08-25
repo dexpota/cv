@@ -2,13 +2,10 @@
 title: Curriculum Vitae
 author: Destro Fabrizio
 colorlinks: True
+{% for key, value in metadata.iteritems() -%}
+{{key}}: {{value}}
+{% endfor %}
 ---
-
-# About
-
-### Contacts
-
-[destro.fabrizio@gmail.com](destro.fabrizio@gmail.com) --- [https://www.destro.me](https://www.destro.me) --- [https://github.com/dexpota](https://github.com/dexpota) --- [https://www.linkedin.com/in/fdestro/](https://www.linkedin.com/in/fdestro/)
 
 # Skills
 ##  General skills
