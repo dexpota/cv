@@ -3,66 +3,66 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
-$if(name)$
-\name{$name$}
-$endif$
-$if(firstname)$
-\firstname{$firstname$}
-$endif$
-$if(lastname)$
-\lastname{$lastname$}
-$endif$
-$if(familyname)$
-\familyname{$familyname$}
-$endif$
-$if(address)$
-\address{$address$}
-$endif$
-$if(position)$
-\position{$position$}
-$endif$
-$if(mobile)$
-\mobile{$mobile$}
-$endif$
-$if(email)$
-\email{$email$}
-$endif$
-$if(homepage)$
-\homepage{$homepage$}
-$endif$
-$if(github)$
-\github{$github$}
-$endif$
-$if(gitlab)$
-\gitlab{$gitlab$}
-$endif$
-$if(stackoverflow)$
-\stackoverflow{$stackoverflow$}
-$endif$
-$if(linkedin)$
-\linkedin{$linkedin$}
-$endif$
-$if(twitter)$
-\twitter{$twitter$}
-$endif$
-$if(skype)$
-\skype{$skype$}
-$endif$
-$if(reddit)$
-\reddit{$reddit$}
-$endif$
-$if(xing)$
-\xing{$xing$}
-$endif$
-$if(extrainfo)$
-\extrainfo{$extrainfo$}
-$endif$
-$if(drawphoto)$
-\drawphoto{$drawphoto$}
-$endif$
-$if(quote)$
-\quote{$quote$}
-$endif$
+%% if personal.name 
+\name{$$personal.name$$}
+%% endif 
+%% if personal.firstname 
+\firstname{$$personal.firstname$$}
+%% endif 
+%% if personal.lastname 
+\lastname{$$personal.lastname$$}
+%% endif 
+%% if personal.familyname 
+\familyname{$$personal.familyname$$}
+%% endif 
+%% if personal.address 
+\address{$$personal.address$$}
+%% endif 
+%% if personal.position 
+\position{$$personal.position$$}
+%% endif 
+%% if personal.mobile 
+\mobile{$$personal.mobile$$}
+%% endif 
+%% if personal.email 
+\email{$$personal.email$$}
+%% endif 
+%% if personal.homepage 
+\homepage{$$personal.homepage$$}
+%% endif 
+%% if personal.github 
+\github{$$personal.github$$}
+%% endif 
+%% if personal.gitlab 
+\gitlab{$$personal.gitlab$$}
+%% endif 
+%% if personal.stackoverflow 
+\stackoverflow{$$personal.stackoverflow$$}
+%% endif 
+%% if personal.linkedin 
+\linkedin{$$personal.linkedin$$}
+%% endif 
+%% if personal.twitter 
+\twitter{$$personal.twitter$$}
+%% endif 
+%% if personal.skype 
+\skype{$$personal.skype$$}
+%% endif 
+%% if personal.reddit 
+\reddit{$$personal.reddit$$}
+%% endif 
+%% if personal.xing 
+\xing{$$personal.xing$$}
+%% endif 
+%% if personal.extrainfo 
+\extrainfo{$$personal.extrainfo$$}
+%% endif 
+%% if personal.drawphoto 
+\drawphoto{$$personal.drawphoto$$}
+%% endif 
+%% if personal.quote 
+\quote{$$personal.quote$$}
+%% endif 
 
 \renewcommand{\section}[1]{\cvsection{#1}}
 \renewcommand{\subsection}[1]{\cvsubsection{#1}}
@@ -73,6 +73,6 @@ $endif$
 
 \makecvfooter{\today}{\getname ~~~·~~~Curriculum Vitae}{\thepage}
 
-$body$
+ $$body$$ 
 
 \end{document}

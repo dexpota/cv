@@ -1,4 +1,4 @@
 compile:
-	python ./autocv/autocv.py cv.yaml -t ./jinja2-templates/ -o ./generated/curriculum.md -f
-	cd ./pandoc-templates/; pandoc ../generated/curriculum.md --pdf-engine=xelatex --template=cool-cv.tex -o ../generated/curriculum.pdf
+	python3 ./autocv/autocv.py cv.yaml -t ./pandoc-templates/cool-cv.tex -o ./generated/curriculum.tex -f
+	export TEXINPUTS=.:./pandoc-templates/:; xelatex -output-directory=./generated ./generated/curriculum.tex 
 

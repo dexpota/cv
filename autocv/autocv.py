@@ -17,12 +17,17 @@ from docopt import docopt
 def main():
     arguments = docopt(__doc__)
 
-    template_directory = arguments["--template-directory"]
+    template_path = arguments["--template-directory"]
     cv_metadata = arguments["<cv_metadata>"]
 
-    if template_directory == None:
+    if template_path == None:
         current_directory = os.path.dirname(os.path.abspath(__file__))
         template_directory = os.path.join(current_directory, "../templates")
+    else:
+        template_directory = os.path.dirname(template_path)
+        template_name = os.path.basename(template_path)
+
+    print(template_name)
 
     if not os.path.exists(cv_metadata):
         print("File {filename} doesn't exist.".format(filename=cv_metadata))
@@ -31,13 +36,23 @@ def main():
     with open(cv_metadata, "r") as fp:
         cv_data = yaml.load(fp.read())
 
-    env = Environment(loader=FileSystemLoader(template_directory))
+    env = Environment(
+        block_start_string = '\BLOCK{',
+        block_end_string = '}',
+        variable_start_string = '$$',
+        variable_end_string = '$$',
+        comment_start_string = '\#{',
+        comment_end_string = '}',
+        line_statement_prefix = '%%',
+        line_comment_prefix = '%#',
+        trim_blocks = True,
+        autoescape = False,
+        loader=FileSystemLoader(template_directory))
 
     sections = []
-    template_name = cv_data["template"]
     template = env.get_template(template_name)
     rendered = template.render(**cv_data)
-
+    print(type(rendered))
     output = arguments["<output>"]
     force = arguments["-f"]
 

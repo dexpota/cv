@@ -1,5 +1,4 @@
-template: "cv.md"
-metadata:
+personal:
     firstname: "Fabrizio"
     lastname: "Destro"
     position: "Software Engineer"
@@ -7,14 +6,15 @@ metadata:
     github: "dexpota"
     linkedin: "fdestro"
     homepage: "https://www.destro.me"
-technical_skills:
+skills:
+    technical:
       programming_languages: ["C", "Cpp", "CS", "Java", "Python"]
       markup_languages: ["LaTex", "HTML", "CSS", "Markdown"]
       others:
         - title: "Libraries and Frameworks"
           items: ["Qt4", "OpenGL", "libwebm", "OpenSG"]
-general_skills:
-    languages: ["Italian", "English"]
+    general:
+      languages: ["Italian", "English"]
 work_experience:
     experiences:
         - title: "Work Experience" 
