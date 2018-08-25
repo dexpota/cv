@@ -64,18 +64,13 @@ $if(quote)$
 \quote{$quote$}
 $endif$
 
+\renewcommand{\section}[1]{\cvsection{#1}}
+
 \begin{document}
 
 \makecvheader[C]
 
-% Print the footer with 3 arguments(<left>, <center>, <right>)
-% Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  { \getname ~~~·~~~Curriculum Vitae}
-  {\thepage}
-
-\cvsection{Education}
+\makecvfooter{\today}{\getname ~~~·~~~Curriculum Vitae}{\thepage}
 
 $body$
 
