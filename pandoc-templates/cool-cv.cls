@@ -106,12 +106,24 @@
 %                                    Styles                                    %
 %==============================================================================%
 
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\bfseries\color{graytext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\bfseries\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\color{text} #1}}
-\newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{%
+	{\fontsize{32pt}{1em}\color{graytext}\bfseries #1}%
+}
+\newcommand*{\headerlastnamestyle}[1]{%
+	{\fontsize{32pt}{1em}\color{text}\bfseries #1}%
+}
+\newcommand*{\headerpositionstyle}[1]{%
+	{\fontsize{7.6pt}{1em}\bodyfont\color{awesome}\scshape #1}%
+}
+\newcommand*{\headeraddressstyle}[1]{%
+	{\fontsize{8pt}{1em}\color{lighttext}\itshape #1}%
+}
+\newcommand*{\headersocialstyle}[1]{%
+	{\fontsize{6.8pt}{1em}\color{text} #1}%
+}
+\newcommand*{\headerquotestyle}[1]{%
+	{\fontsize{9pt}{1em}\bodyfont\color{darktext}\itshape #1}%
+}
 
 %==============================================================================%
 %                                  Properties                                  %
@@ -253,21 +265,21 @@
 % Define a header for CV
 % Usage: \makecvheader
 \newcommand*{\makecvheader}[1][C]{%
-  \newlength{\headertextwidth}
-  \newlength{\headerphotowidth}
-  \ifthenelse{\isundefined{\@photo}}{%
-    \setlength{\headertextwidth}{\textwidth}
-    \setlength{\headerphotowidth}{0cm}
+  \newlength{\headertextwidth}%
+  \newlength{\headerphotowidth}%
+  \ifthenelse{\isundefined{\@photo}}{% Choose the text width and photo width
+    \setlength{\headertextwidth}{\textwidth}%
+    \setlength{\headerphotowidth}{0cm}%
   }{%
-    \setlength{\headertextwidth}{0.76\textwidth}
-    \setlength{\headerphotowidth}{0.24\textwidth}
+    \setlength{\headertextwidth}{0.76\textwidth}%
+    \setlength{\headerphotowidth}{0.24\textwidth}%
   }%
-  \begin{minipage}[c]{\headerphotowidth}%
+  \begin{minipage}[c]{\headerphotowidth}% Draw photo on the left
     \ifthenelse{\equal{\@photoalign}{left}}{\raggedright\drawphoto}{}
   \end{minipage}
-  \begin{minipage}[c]{\headertextwidth}
+  \begin{minipage}[c]{\headertextwidth}% Personal informations
     \ifthenelse{\equal{#1}{L}}{\raggedright}{\ifthenelse{\equal{#1}{R}}{\raggedleft}{\centering}}
-    \headerfirstnamestyle{\@firstname}\acvHeaderNameDelim\headerlastnamestyle{\@lastname}%
+    \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
     \\[\acvHeaderAfterNameSkip]%
     \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\[\acvHeaderAfterPositionSkip]}}%
     \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\[\acvHeaderAfterAddressSkip]}}%
@@ -347,11 +359,11 @@
           \@extrainfo%
         }%
     } \\[\acvHeaderAfterSocialSkip]%
-    \ifthenelse{\isundefined{\@quote}}%
+    \ifthenelse{\isundefined{\@quote}}% Your quote!
       {}%
       {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%
   \end{minipage}%
-  \begin{minipage}[c]{\headerphotowidth}%
+  \begin{minipage}[c]{\headerphotowidth}% Draw photo on the right
     \ifthenelse{\equal{\@photoalign}{right}}{\raggedleft\drawphoto}{}
   \end{minipage}
 }
