@@ -65,28 +65,13 @@ $if(quote)$
 $endif$
 
 \renewcommand{\section}[1]{\cvsection{#1}}
+\renewcommand{\subsection}[1]{\cvsubsection{#1}}
 
 \begin{document}
 
 \makecvheader[C]
 
 \makecvfooter{\today}{\getname ~~~·~~~Curriculum Vitae}{\thepage}
-
-\begin{cventries}
-%---------------------------------------------------------
-  \cventry
-    {B.S. in Computer Science and Engineering} % Degree
-    {POSTECH(Pohang University of Science and Technology)} % Institution
-    {Pohang, S.Korea} % Location
-    {Mar. 2010 - Aug. 2017} % Date(s)
-    {
-      \begin{cvitems} % Description(s) bullet points
-        \item {Got a Chun Shin-Il Scholarship which is given to promising students in CSE Dept.}
-      \end{cvitems} 
-    }
-
-%---------------------------------------------------------
-\end{cventries}
 
 $body$
 
