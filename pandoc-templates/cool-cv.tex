@@ -64,15 +64,36 @@
 \quote{$$personal.quote$$}
 %% endif 
 
-\renewcommand{\section}[1]{\cvsection{#1}}
-\renewcommand{\subsection}[1]{\cvsubsection{#1}}
-
 \begin{document}
 
 \makecvheader[C]
 
 \makecvfooter{\today}{\getname ~~~·~~~Curriculum Vitae}{\thepage}
 
- $$body$$ 
+\cvsection{Skills}
+
+\begin{cvskills}
+\cvskill{Programming Languages}{%
+%% for language in skills.technical.programming_languages
+$$language$$,
+%% endfor
+} 
+\end{cvskills}
+
+\begin{cvskills}
+\cvskill{Markup Languages}{%
+%% for language in skills.technical.markup_languages
+$$language$$,
+%% endfor
+} 
+\end{cvskills}
+
+\begin{cvskills}
+\cvskill{Languages}{%
+%% for language in skills.general.languages
+$$language$$,
+%% endfor
+} 
+\end{cvskills}
 
 \end{document}
