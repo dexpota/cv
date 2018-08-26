@@ -23,7 +23,7 @@
 %==============================================================================%
 %                             Third party packages                             %
 %==============================================================================%
-
+\RequirePackage{tabularx}
 % Needed to make fixed length table
 \RequirePackage{array}
 % Needed to handle list environment
@@ -295,6 +295,8 @@
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 
+\renewcommand\tabularxcolumn[1]{m{#1}}% for vertical centering text in X column
+
 % Use to draw horizontal line with specific thickness
 \def\vhrulefill#1{\leavevmode\leaders\hrule\@height#1\hfill \kern\z@}
 
@@ -486,6 +488,16 @@
   \vspace{-4.0mm}
 }
 
+% Define an environment for cvskill
+\newenvironment{cvskillsx}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2.0mm}
+    \setlength\tabcolsep{1ex}
+    \setlength{\extrarowheight}{0pt}
+    \tabularx{\textwidth}{ @{\extracolsep{\fill}} r X }
+}{%
+    \endtabularx
+}
 % Define an environment for cvskill
 \newenvironment{cvskills}{%
   \vspace{\acvSectionContentTopSkip}

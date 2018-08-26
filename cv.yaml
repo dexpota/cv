@@ -8,13 +8,15 @@ personal:
     homepage: "https://www.destro.me"
 skills:
     technical:
-      programming_languages: ["C", "C++", "C\\#", "Java", "Python"]
-      markup_languages: ["LaTex", "HTML", "CSS", "Markdown"]
-      others:
-        - title: "Libraries and Frameworks"
-          items: ["Qt4", "OpenGL", "libwebm", "OpenSG"]
+      programming_languages: ["C", "C++", "C\\#", "Java on Android", "Python", "Javascript", "Typescript", "Assembly", "BASH"]
+      query_languages: ["SQL", "GraphQL"]
+      markup_languages: ["LaTex", "HTML", "CSS", "Markdown", "dot", "PlantUML"]
+      libraries_frameworks: ["Qt4", "OpenGL", "libwebm", "OpenSG", "jupyter", "numpy", "matplotlib", "OpenCV", "OpenGL", "Boost", "ARkit", "Unity", "SSE Extensions"]
     general:
+      software: ["GIMP", "Inkscape", "ImageMagick", "Blender", "AutoCAD", "Inventor", "KiCad"]
+      devops_tools: ["git"]
       languages: ["Italian", "English"]
+      others: ["Taglio laser", "Utilizzo di software EDA (Electronic Design Automation)", "Arduino", "Amministrazione servizi web: gitlab, Rocket.chat, wallabag, ngnix"]
 work_experience:
     experiences:
         - title: "Work Experience" 
