@@ -17,11 +17,23 @@ skills:
       devops_tools: ["git"]
       languages: ["Italian", "English"]
       others: ["Taglio laser", "Utilizzo di software EDA (Electronic Design Automation)", "Arduino", "Amministrazione servizi web: gitlab, Rocket.chat, wallabag, ngnix"]
-work_experience:
-    experiences:
-        - title: "Work Experience" 
-          start: "2011 Aprile"
-          end: "2011 Luglio"
+experience:
+    - job_title: "Mobile Software Developer"
+      organization: "E-Gate Mobile s.r.l."
+      location: "Torino, Italia"
+      date: "Agosto 2017 - Agosto 2018"
+    - job_title: "Consulete - Software Engineer"
+      organization: "Enerbrain s.r.l."
+      location: "Torino, Italia"
+      date: "Ottobre 2014 - Febbraio 2015"
+    - job_title: "Software Developer"
+      organization: "Seac02 s.r.l."
+      location: "Torino, Italia"
+      date: "Gennaio 2012 - Luglio 2012"
+    - job_title: "Tirocinio - Software Engineer"
+      organization: "Seac02 s.r.l."
+      location: "Torino, Italia"
+      date: "Aprile 2011 - Luglio 2011"
 education:
     degrees:
         - degree: "Laurea di secondo livello in Ingegneria Informatica"
