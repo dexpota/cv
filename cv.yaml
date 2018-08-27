@@ -24,6 +24,18 @@ work_experience:
           end: "2011 Luglio"
 education:
     degrees:
-        - graduated_with: "Laurea di primo livello in Ingegneria Informatica"
-          graduated_from: "Politecnico di Torino"
-          graduated_in: "2012"
+        - degree: "Laurea di secondo livello in Ingegneria Informatica"
+          institution: "Politecnico di Torino"
+          location: "Torino, Italia"
+          date: "In conseguimento"
+        - degree: "Laurea di primo livello in Ingegneria Informatica"
+          institution: "Politecnico di Torino"
+          date: "2012"
+          location: "Torino, Italia"
+          notes: ["Laurea conseguita con la massima valutazione e con lode."]
+        - degree: "Diploma di Perito Industriale per l'Informatica"
+          institution: "Istituto Tecnico Industriale Statale Pininfarina"
+          date: "2008"
+          location: "Moncalieri, Italia"
+          notes: ["Diploma conseguito con la massima valutazione."]
+
