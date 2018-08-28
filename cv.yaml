@@ -14,7 +14,7 @@ skills:
       libraries_frameworks: ["Qt4", "OpenGL", "libwebm", "OpenSG", "jupyter", "numpy", "matplotlib", "OpenCV", "OpenGL", "Boost", "ARkit", "Unity", "SSE Extensions"]
     general:
       software: ["GIMP", "Inkscape", "ImageMagick", "Blender", "AutoCAD", "Inventor", "KiCad"]
-      devops_tools: ["git"]
+      devops_tools: ["git", "Makefile", "coala"]
       languages: ["Italian", "English"]
       others: ["Taglio laser", "Utilizzo di software EDA (Electronic Design Automation)", "Arduino", "Amministrazione servizi web: gitlab, Rocket.chat, wallabag, ngnix"]
 experience:
