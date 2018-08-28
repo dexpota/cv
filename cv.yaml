@@ -22,10 +22,13 @@ experience:
       organization: "E-Gate Mobile s.r.l."
       location: "Torino, Italia"
       date: "Agosto 2017 - Agosto 2018"
+      notes: ["Progettazione e realizzazione di applicativi mobile per la piattaforma Android.",
+            "Progettazione e realizzazione di applicativi di realtà aumentata su piattaforma mobile, utilizzando Unity."]
     - job_title: "Software Engineer Consultant"
       organization: "Enerbrain s.r.l."
       location: "Torino, Italia"
       date: "Ottobre 2014 - Febbraio 2015"
+      notes: ["Progettazione e realizzazione di un sistema di telemisurazione di una serie di centraline solari."]
     - job_title: "Software Developer"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
@@ -34,6 +37,7 @@ experience:
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
       date: "Aprile 2011 - Luglio 2011"
+      notes: ["Progettazione e realizzazione di un applicativo per il calcolo dell'illuminazione locale (ambient occlusion) di una scena tridimensionale ed esportazione su texture."]
 education:
     degrees:
         - degree: "Laurea di secondo livello in Ingegneria Informatica"

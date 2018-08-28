@@ -1,14 +1,22 @@
 \cvsection{Experience}
 
 
+%% for e in experience
 \begin{cventries}
 
-%% for e in experience
   \cventry
     {$$e.job_title$$} % Job title
     {$$e.organization$$} % Organization
     {$$e.location$$} % Location
     {$$e.date$$} % Date(s)
-    {}
-%% endfor
+    {
+    %% if e.notes
+      \begin{cvitems} % Description(s) bullet points
+		%% for note in e.notes
+        \item{$$note$$} 
+		%% endfor
+      \end{cvitems}
+    %% endif
+	}
 \end{cventries}
+%% endfor
