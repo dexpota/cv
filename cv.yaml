@@ -21,29 +21,29 @@ experience:
     - job_title: "Mobile Software Developer"
       organization: "E-Gate Mobile s.r.l."
       location: "Torino, Italia"
-      date: "Agosto 2017 - Agosto 2018"
+      date: "2017 - 2019"
       notes: ["Progettazione e realizzazione di applicativi mobile per la piattaforma Android.",
             "Progettazione e realizzazione di applicativi di realtà aumentata su piattaforma mobile, utilizzando Unity."]
     - job_title: "Software Engineer Consultant"
       organization: "Enerbrain s.r.l."
       location: "Torino, Italia"
-      date: "Ottobre 2014 - Febbraio 2015"
+      date: "2014 - 2015"
       notes: ["Progettazione e realizzazione di un sistema di telemisurazione di una serie di centraline solari."]
     - job_title: "Software Developer"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
-      date: "Gennaio 2012 - Luglio 2012"
+      date: "2012"
     - job_title: "Software Engineer Trainee"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
-      date: "Aprile 2011 - Luglio 2011"
+      date: "2011"
       notes: ["Progettazione e realizzazione di un applicativo per il calcolo dell'illuminazione locale (ambient occlusion) di una scena tridimensionale ed esportazione su texture."]
 education:
     degrees:
         - degree: "Laurea di secondo livello in Ingegneria Informatica"
           institution: "Politecnico di Torino"
           location: "Torino, Italia"
-          date: "In conseguimento"
+          date: "Laureando"
           long_description: "Laurea di secondo livello in Ingegneria Informatica con specializzazione in Computer Graphics, attualmente in conseguimento."
         - degree: "Laurea di primo livello in Ingegneria Informatica"
           institution: "Politecnico di Torino"
