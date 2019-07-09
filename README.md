@@ -6,9 +6,8 @@
 
 ### Prerequisites
 
-1. Download and install *fontawesome 4* from [here][fontawesome];
-
-2. Use `tlmgr`to install all tex packages required:
+1. Use `tlmgr`to install all required `tex` packages :
     ```bash
     sudo tlmgr install enumitem xifthen ifmtarg fontawesome sourcesanspro tcolorbox environ trimspaces lm-math
     ```
+2. In order to use `fontawesome` package you must have the ononymous font installed in your system, you can download it [here][fontawesome] (it's important to download version `4.7.0`);
