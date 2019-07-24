@@ -6,9 +6,10 @@
 
 ### Prerequisites
 
-1. Install `latex` and `tlmgr` on your system, on Ubuntu:
+1. Install `xelatex` and `tlmgr` on your system:
     ```bash
-    sudo apt install texlive-base
+    # on Ubuntu and Debian
+    sudo apt install texlive-xetex
     ```
 2. Use `tlmgr`to install all required `tex` packages :
     ```bash
