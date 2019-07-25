@@ -8,7 +8,7 @@ personal:
     homepage: "https://www.destro.me"
 skills:
     technical:
-      programming_languages: ["C", "C++", "C\\#", "Java on Android", "Python", "Javascript", "Typescript", "Assembly", "BASH"]
+      programming_languages: ["C", "C++", "C\\#", "Java", "Kotlin", "Python", "Javascript", "Typescript", "Assembly", "BASH"]
       query_languages: ["SQL", "GraphQL"]
       markup_languages: ["LaTex", "HTML", "CSS", "Markdown", "dot", "PlantUML"]
       libraries_frameworks: ["Qt4", "OpenGL", "libwebm", "OpenSG", "jupyter", "numpy", "matplotlib", "OpenCV", "OpenGL", "Boost", "ARkit", "Unity", "SSE Extensions"]
@@ -40,6 +40,11 @@ experience:
       notes: ["Progettazione e realizzazione di un applicativo per il calcolo dell'illuminazione locale (ambient occlusion) di una scena tridimensionale ed esportazione su texture."]
 education:
     degrees:
+        - degree: "SEI Inventor - Rapid Prototyping Course"
+          institution: "School of Entrepreneurship and Innovation"
+          location: "Torino, Italia"
+          date: "September 2018"
+          long_description: "Inventor is a ten-day prototyping boot-camp in a a makerspace, where university students passionate about technology & innovation can transform their ideas into working prototypes supported by international mentors and experts."
         - degree: "Laurea di secondo livello in Ingegneria Informatica"
           institution: "Politecnico di Torino"
           location: "Torino, Italia"
@@ -58,21 +63,24 @@ education:
           notes: ["Diploma conseguito con la massima valutazione."]
           long_description: "Conseguito nel 2008 il Diploma di Perito Industriale per l'Informatica con il massimo dei voti presso l'Istituto Tecnico Industriale Statale Pininfarina di Moncalieri."
     certificates:
+        - certificate: "Data Analytics for Business"
+          location: "Torino"
+          date: "Jun 2019"
         - certificate: "IELTS - International English Language Testing System"
           location: "Torino"
-          date: "7 July 2012"
+          date: "July 2012"
         - certificate: "CCNA 2 - Router and Routing Basics"
           location: "ITIS Pininfarina, Moncalieri"
-          date: "4 May 2008"
+          date: "May 2008"
         - certificate: "CCNA 1 - Networking Basics"
           location: "ITIS Pininfarina, Moncalieri"
-          date: "15 June 2007"
+          date: "June 2007"
         - certificate: "Microsoft Office Specialist - Access 2003"
           location: "ITIS Pininfarina, Moncalieri"
-          date: "18 May 2007"
+          date: "May 2007"
         - certificate: "Microsoft Office Specialist - Word 2003"
           location: "ITIS Pininfarina, Moncalieri"
-          date: "18 May 2007"
+          date: "May 2007"
         - certificate: "IT Essentials I: PC Hardware and Software"
           location: "ITIS Pininfarina, Moncalieri"
-          date: "27 May 2006"
+          date: "May 2006"
