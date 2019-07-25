@@ -1,24 +1,33 @@
-all: generated/curriculum.pdf
+OUTPUT_DIRECTORY=generated
+
+FILENAME=curriculum
+
+PDF=$(OUTPUT_DIRECTORY)/$(FILENAME).pdf
+TEX=$(OUTPUT_DIRECTORY)/$(FILENAME).tex
+
+.PHONY: all
+all: | tex pdf
 	@echo "+ $@"
 
-generated/curriculum.pdf: generated/curriculum.tex | generated
-	@echo "+ $@"
-	@export TEXINPUTS=.:./template/:; xelatex -output-directory=./generated ./generated/curriculum.tex
+.PHONY: tex
+tex: $(TEX)
 
-generated/curriculum.tex:
-	@echo "+ $@"
-	python3 autocv/autocv.py cv.yaml -o generated/curriculum.tex --template-directory=./template/cool-cv.tex
-
-cv.yaml template/cool-cv.tex autocv/autocv.py: generated/curriculum.tex
-	@echo "+ $@"
-	@python3 ./autocv/autocv.py cv.yaml -t ./template/cool-cv.tex -o ./generated/curriculum.tex -f
-
-# Create output directory
-generated:
-	@mkdir ./generated
+.PHONY: pdf
+pdf: $(PDF)
 
 .PHONY: clean
 clean:
 	@echo "+ $@"
-	@rm -rf ./generated/
+	@rm -rf $(OUTPUT_DIRECTORY)
 
+$(PDF): $(TEX) | $(OUTPUT_DIRECTORY)
+	@echo "+ $@"
+	@export TEXINPUTS=.:./template/:; xelatex -output-directory=$(OUTPUT_DIRECTORY) $(TEX)
+
+$(TEX): cv.yaml template/cool-cv.tex autocv/autocv.py | $(OUTPUT_DIRECTORY)
+	@echo "+ $@"
+	python3 autocv/autocv.py cv.yaml -o $(TEX) --template-directory=./template/cool-cv.tex
+
+# Create output directory
+$(OUTPUT_DIRECTORY):
+	@mkdir ./$(OUTPUT_DIRECTORY)
