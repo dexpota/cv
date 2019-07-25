@@ -27,14 +27,12 @@ def main():
         template_directory = os.path.dirname(template_path)
         template_name = os.path.basename(template_path)
 
-    print(template_name)
-
     if not os.path.exists(cv_metadata):
         print("File {filename} doesn't exist.".format(filename=cv_metadata))
         exit(-1)
 
     with open(cv_metadata, "r") as fp:
-        cv_data = yaml.load(fp.read())
+        cv_data = yaml.full_load(fp.read())
 
     env = Environment(
         block_start_string = '\BLOCK{',
@@ -52,7 +50,7 @@ def main():
     sections = []
     template = env.get_template(template_name)
     rendered = template.render(**cv_data)
-    print(type(rendered))
+
     output = arguments["<output>"]
     force = arguments["-f"]
 
