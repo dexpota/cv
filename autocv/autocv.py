@@ -20,7 +20,7 @@ def main():
     template_path = arguments["--template-directory"]
     cv_metadata = arguments["<cv_metadata>"]
 
-    if template_path == None:
+    if template_path is None:
         current_directory = os.path.dirname(os.path.abspath(__file__))
         template_directory = os.path.join(current_directory, "../templates")
     else:
@@ -35,16 +35,16 @@ def main():
         cv_data = yaml.full_load(fp.read())
 
     env = Environment(
-        block_start_string = '\BLOCK{',
-        block_end_string = '}',
-        variable_start_string = '$$',
-        variable_end_string = '$$',
-        comment_start_string = '\#{',
-        comment_end_string = '}',
-        line_statement_prefix = '%%',
-        line_comment_prefix = '%#',
-        trim_blocks = True,
-        autoescape = False,
+        block_start_string='\\BLOCK{',
+        block_end_string='}',
+        variable_start_string='$$',
+        variable_end_string='$$',
+        comment_start_string='\\#{',
+        comment_end_string='}',
+        line_statement_prefix='%%',
+        line_comment_prefix='%#',
+        trim_blocks=True,
+        autoescape=False,
         loader=FileSystemLoader(template_directory))
 
     sections = []
