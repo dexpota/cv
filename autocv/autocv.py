@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 """autocv.
 Usage:
-    autocv <cv_metadata> -o <output> [options]
+    autocv <cv_metadata> -o <output> -t <template> [-f]
 
 Options:
-    -t <template>, --template-directory <template>  Template search directory.
+    -t <template>, --template-tex <template>  Template search directory.
     -f  Force output overwrite.
 """
 
@@ -17,19 +17,15 @@ from docopt import docopt
 def main():
     arguments = docopt(__doc__)
 
-    template_path = arguments["--template-directory"]
+    template_tex = arguments["--template-tex"]
     cv_metadata = arguments["<cv_metadata>"]
 
-    if template_path is None:
-        current_directory = os.path.dirname(os.path.abspath(__file__))
-        template_directory = os.path.join(current_directory, "../templates")
-    else:
-        template_directory = os.path.dirname(template_path)
-        template_name = os.path.basename(template_path)
+    template_directory = os.path.dirname(template_tex)
+    template_name = os.path.basename(template_tex)
 
     if not os.path.exists(cv_metadata):
         print("File {filename} doesn't exist.".format(filename=cv_metadata))
-        exit(-1)
+        exit(255)
 
     with open(cv_metadata, "r") as fp:
         cv_data = yaml.full_load(fp.read())
@@ -47,19 +43,23 @@ def main():
         autoescape=False,
         loader=FileSystemLoader(template_directory))
 
-    sections = []
     template = env.get_template(template_name)
     rendered = template.render(**cv_data)
 
     output = arguments["<output>"]
     force = arguments["-f"]
 
+    if not os.path.exists(os.path.dirname(output)):
+        print("Directory {filename} doesn't exist.".format(filename=output))
+        exit(255)
+
     if os.path.exists(output) and not force:
         print("File {filename} already exists.".format(filename=output))
-        exit(-1)
+        exit(255)
 
     with open(output, "w") as fp:
         fp.write(rendered)
+
 
 if __name__ == "__main__":
     main()
