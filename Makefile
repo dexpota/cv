@@ -30,7 +30,7 @@ $(PDF): $(TEX) | $(OUTPUT_DIRECTORY)
 
 $(TEX): cv.yaml template/cool-cv.tex autocv/autocv.py | $(OUTPUT_DIRECTORY)
 	@echo "+ $@"
-	python3 autocv/autocv.py cv.yaml -o $(TEX) --template-directory=./template/cool-cv.tex
+	pipenv run python3 autocv/autocv.py cv.yaml -o $(TEX) --template-directory=./template/cool-cv.tex
 
 # Create output directory
 $(OUTPUT_DIRECTORY):
