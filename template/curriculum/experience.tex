@@ -10,10 +10,13 @@
     {$$e.location$$} % Location
     {$$e.date$$} % Date(s)
     {
-    %% if e.notes
+	%% if e.description
+		$$e.description$$
+	%% endif
+	%% if e.notes
       \begin{cvitems} % Description(s) bullet points
 		%% for note in e.notes
-        \item{$$note$$} 
+        \item{$$note$$}
 		%% endfor
       \end{cvitems}
     %% endif
