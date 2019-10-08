@@ -28,7 +28,26 @@ experience:
       organization: "Enerbrain s.r.l."
       location: "Torino, Italia"
       date: "2014 - 2015"
-      notes: ["Progettazione e realizzazione di un sistema di telemisurazione di una serie di centraline solari."]
+      description: >-
+        \justify
+        Nel ruolo di Software Engineer Consultant mi sono occupato della
+        progettazione e realizzazione di un sistema di telemisurazione di centraline
+        solari, dalla raccolta dati alla loro presentazione su una piattaforma web.  Il
+        progetto è stato concepito insieme al committente e al cliente finale e
+        realizzato da un team di due persone.  Lo sviluppo è proseguito seguendo una
+        metodologia Agile, per iterazioni successive del prodotto con costanti
+        riscontri da parte del cliente.
+
+        \justify
+        Il sistema è composto da due componente la prima si interfacciava con la centralina di
+        controllo per Il primo sistema utilizza C++ per la comunicazione seriale con la
+        centralina di controllo, questo sistema è stato integrato con un componente
+        python che utilizzava la libreria in C++ per richiedere la lettura dei sensori
+        e si occupava di inviare i dati al cloud di firebase.  Un secondo sistema
+        scritto in Javascript e Typescript utilizza il progetto rdash-angular come base
+        di partenza (https://github.com/invertase/rdash-angular) per scaricare in tempo
+        reale i dati e visualizzarli attraverso una serie di grafici
+
     - job_title: "Software Developer"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
