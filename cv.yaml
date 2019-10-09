@@ -18,12 +18,26 @@ skills:
       languages: ["Italian", "English"]
       others: ["Taglio laser", "Utilizzo di software EDA (Electronic Design Automation)", "Arduino", "Amministrazione servizi web: gitlab, Rocket.chat, wallabag, ngnix"]
 experience:
-    - job_title: "Mobile Software Developer"
+    - job_title: "Mobile Software Engineer"
       organization: "E-Gate Mobile s.r.l."
       location: "Torino, Italia"
       date: "2017 - 2019"
-      notes: ["Progettazione e realizzazione di applicativi mobile per la piattaforma Android.",
-            "Progettazione e realizzazione di applicativi di realtà aumentata su piattaforma mobile, utilizzando Unity."]
+      description: >-
+        \justify
+        Nel ruolo di Mobile Software Engineer mi sono occupato della
+        progettazione di diversi applicativi mobile per la piattaforma Android e di
+        applicativi di realtà aumentata utilizzando Unity3D.
+
+        \justify
+        I progetti sono stati portati avanti con un team di quattro persone
+        seguendo metodologie agile, con continui riscontri da parte del cliente.
+
+        \justify
+        Per lo sviluppo di applicativi mobile sono state utilizzati due
+        linguaggi di programmazione Java e Kotlin. Inoltre sono state utilizzate
+        diverse librerie di sviluppo come ad esempio Retrofit2, JodaTime, JetPack.
+        L'ambiente di sviluppo utilizzato è stato Android Studio insieme a git
+        per il versionamento del codice.
     - job_title: "Software Engineer Consultant"
       organization: "Enerbrain s.r.l."
       location: "Torino, Italia"
@@ -39,24 +53,70 @@ experience:
         riscontri da parte del cliente.
 
         \justify
-        Il sistema è composto da due componente la prima si interfacciava con la centralina di
-        controllo per Il primo sistema utilizza C++ per la comunicazione seriale con la
-        centralina di controllo, questo sistema è stato integrato con un componente
-        python che utilizzava la libreria in C++ per richiedere la lettura dei sensori
-        e si occupava di inviare i dati al cloud di firebase.  Un secondo sistema
-        scritto in Javascript e Typescript utilizza il progetto rdash-angular come base
-        di partenza (https://github.com/invertase/rdash-angular) per scaricare in tempo
-        reale i dati e visualizzarli attraverso una serie di grafici
+        Il sistema realizzato si componeva di due moduli, il primo si occupava
+        della comunicazione con la centralina di controllo e l'invio dei dati di
+        misurazione, mentre il secondo della visualizzazione delle metriche di
+        interesse.
 
-    - job_title: "Software Developer"
+        \justify
+        Il primo modulo era ulteriormente suddiviso in due componenti, il primo
+        scritto in C++ si occupava della comunicazione seriale con la centralina di
+        controllo, il secondo modulo scritto in python utilizzava il primo per la
+        lettura delle metriche e inviava i dati al cloud di firebase
+
+        \justify
+        Il secondo modulo scritto in Javascript e Typescript si basava su un
+        progetto open source chiamato rdash-angular \url{https://github.com/invertase/rdash-angular}
+        e offriva all'utente un interfaccia web per la visualizzazione in
+        tempo reale dei dati memorizzati su firebase.
+    - job_title: "Software Developer Engineer"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
       date: "2012"
+      description:
+        \justify
+        Nel ruolo di Software Developer Engineer mi sono occupato dello
+        sviluppo di un applicativo di realtà aumentata e lo sviluppo di plugin
+        per lo screen recording di una scena virtuale nel loro prodotto software. Oltre
+        a questi due progetti ho supportato la codebase del loro strumento software per
+        la realizzazione di scene virtuali di realtà aumentata.
+
+        \justify
+        I progetti sono stati portati avanti con un team di tre persone
+        seguendo una metodologia waterfall I progetti sono stati realizzati utilizzando C++ come linguaggio di
+        programmazione e alcune librerie tra le quali OpenGL, OpenSG e Kinect SDK.
     - job_title: "Software Engineer Trainee"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
       date: "2011"
-      notes: ["Progettazione e realizzazione di un applicativo per il calcolo dell'illuminazione locale (ambient occlusion) di una scena tridimensionale ed esportazione su texture."]
+      description:
+        \justify
+        Nel ruolo di Software Developer Trainee mi sono occupato della ricerca
+        e sviluppo di un applicativo per il calcolo dell'illuminazione locale (ambient
+        occlusion) e delle coordinate texture di oggetti tridimensionali che
+        funzionasse per qualsiasi scena tridimensionale data.
+
+        \justify
+        La realizzazione del progetto si articolava di due fasi, una prima in
+        cui ho ricercato tra lo stato dell'arte quale approccio potesse essere
+        utilizzato per risolvere il problema, mentre nella seconda fase mi sono
+        occupata dell'implementazione e della raccolta dei risultati. Il
+        progetto è stato portato avanti sotto la guida di un mentore aziendale seguendo
+        un approccio waterfall.
+
+        \justify
+        L'applicativo si componeva di tre parti organizzate in cascata, la
+        prima si occupava di calcolare le coordinate texture dell'oggetto
+        tridimensionale, la seconda di disporre i vari elementi bidimensionali su di
+        una superficie piana, cercando di ridurre il più possibile lo spazio vuoto, la
+        terza si occupava di calcolare l'illuminazione locale e di salvare il risultato
+        su di un file immagine.
+
+        \justify
+        L'applicativo è stato realizzato utilizzando il linguaggio C++ per
+        motivi di integrazione con il loro software proprietario.  Tra le varie
+        librerie utilizzate vi sono OpenGL, OpenSG, BLAST e una libreria per
+        l'ottimizzazione lineare.
 education:
     degrees:
         - degree: "SEI Inventor - Rapid Prototyping Course"
