@@ -9,12 +9,15 @@
     {$$degree.institution$$}% Institution
     {$$degree.location$$} % Location
     {$$degree.date$$} % Date(s)
-	{
+    {
+    %% if degree.description
+        $$degree.description$$
+    %% endif
     %% if degree.notes
       \begin{cvitems} % Description(s) bullet points
-		%% for note in degree.notes
-        \item{$$note$$} 
-		%% endfor
+        %% for note in degree.notes
+        \item{$$note$$}
+        %% endfor
       \end{cvitems}
     %% endif
     }
