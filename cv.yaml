@@ -129,6 +129,11 @@ education:
           location: "Torino, Italia"
           date: "Laureando"
           long_description: "Laurea di secondo livello in Ingegneria Informatica con specializzazione in Computer Graphics, attualmente in conseguimento."
+          description: "
+            La laurea ha come argomento lo sviluppo di una metodologia di acquisizione delle proprietà di riflettanza dei materiali.
+            Si compone di una prima parte di sviluppo di un dispositivo fisico di acquisizione che permetta per ogni possibile combinazione luce-camera di acquisire un'immagine.
+            Il dispositivo sarà poi integrato da un software di acqusizione, modifica e riproduzione dei dati acqusiti.
+          "
         - degree: "Laurea di primo livello in Ingegneria Informatica"
           institution: "Politecnico di Torino"
           date: "2012"
