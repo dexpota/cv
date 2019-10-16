@@ -11,7 +11,7 @@ skills:
       programming_languages: ["C", "C++", "C\\#", "Java", "Kotlin", "Python", "Javascript", "Typescript", "Assembly", "BASH"]
       query_languages: ["SQL", "GraphQL"]
       markup_languages: ["LaTex", "HTML", "CSS", "Markdown", "dot", "PlantUML"]
-      libraries_frameworks: ["Qt4", "OpenGL", "libwebm", "OpenSG", "jupyter", "numpy", "matplotlib", "OpenCV", "OpenGL", "Boost", "ARkit", "Unity", "SSE Extensions"]
+      libraries_frameworks: ["Qt4", "libwebm", "OpenSG", "jupyter", "numpy", "matplotlib", "OpenCV", "OpenGL", "Boost", "ARkit", "Unity", "SSE Extensions"]
     general:
       software: ["GIMP", "Inkscape", "ImageMagick", "Blender", "AutoCAD", "Inventor", "KiCad"]
       devops_tools: ["git", "travis-ci", "Makefile", "coala"]
