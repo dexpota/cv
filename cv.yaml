@@ -25,19 +25,20 @@ experience:
       description: >-
         \justify
         Nel ruolo di Mobile Software Engineer mi sono occupato della
-        progettazione di diversi applicativi mobile per la piattaforma Android e di
-        applicativi di realtà aumentata utilizzando Unity3D.
+        progettazione di diversi applicativi mobile per la piattaforma Android
+        e di applicativi di realtà aumentata utilizzando Unity3D.
 
         \justify
         I progetti sono stati portati avanti con un team di quattro persone
-        seguendo metodologie agile, con continui riscontri da parte del cliente.
+        seguendo metodologie agile, con continui riscontri da parte del
+        cliente.
 
         \justify
         Per lo sviluppo di applicativi mobile sono state utilizzati due
-        linguaggi di programmazione Java e Kotlin. Inoltre sono state utilizzate
-        diverse librerie di sviluppo come ad esempio Retrofit2, JodaTime, JetPack.
-        L'ambiente di sviluppo utilizzato è stato Android Studio insieme a git
-        per il versionamento del codice.
+        linguaggi di programmazione Java e Kotlin. Inoltre sono state
+        utilizzate diverse librerie di sviluppo come ad esempio Retrofit2,
+        JodaTime, JetPack.  L'ambiente di sviluppo utilizzato è stato Android
+        Studio insieme a git per il versionamento del codice.
     - job_title: "Software Engineer Consultant"
       organization: "Enerbrain s.r.l."
       location: "Torino, Italia"
@@ -45,30 +46,32 @@ experience:
       description: >-
         \justify
         Nel ruolo di Software Engineer Consultant mi sono occupato della
-        progettazione e realizzazione di un sistema di telemisurazione di centraline
-        solari, dalla raccolta dati alla loro presentazione su una piattaforma web.  Il
-        progetto è stato concepito insieme al committente e al cliente finale e
-        realizzato da un team di due persone.  Lo sviluppo è proseguito seguendo una
-        metodologia Agile, per iterazioni successive del prodotto con costanti
-        riscontri da parte del cliente.
+        progettazione e realizzazione di un sistema di telemisurazione di
+        centraline solari, dalla raccolta dati alla loro presentazione su una
+        piattaforma web.  Il progetto è stato concepito insieme al committente
+        e al cliente finale e realizzato da un team di due persone.  Lo
+        sviluppo è proseguito seguendo una metodologia Agile, per iterazioni
+        successive del prodotto con costanti riscontri da parte del cliente.
 
         \justify
         Il sistema realizzato si componeva di due moduli, il primo si occupava
-        della comunicazione con la centralina di controllo e l'invio dei dati di
-        misurazione, mentre il secondo della visualizzazione delle metriche di
-        interesse.
+        della comunicazione con la centralina di controllo e l'invio dei dati
+        di misurazione, mentre il secondo della visualizzazione delle metriche
+        di interesse.
 
         \justify
         Il primo modulo era ulteriormente suddiviso in due componenti, il primo
-        scritto in C++ si occupava della comunicazione seriale con la centralina di
-        controllo, il secondo modulo scritto in python utilizzava il primo per la
-        lettura delle metriche e inviava i dati al cloud di firebase
+        scritto in C++ si occupava della comunicazione seriale con la
+        centralina di controllo, il secondo modulo scritto in python utilizzava
+        il primo per la lettura delle metriche e inviava i dati al cloud di
+        firebase
 
         \justify
         Il secondo modulo scritto in Javascript e Typescript si basava su un
-        progetto open source chiamato rdash-angular \url{https://github.com/invertase/rdash-angular}
-        e offriva all'utente un interfaccia web per la visualizzazione in
-        tempo reale dei dati memorizzati su firebase.
+        progetto open source chiamato rdash-angular
+        \url{https://github.com/invertase/rdash-angular} e offriva all'utente
+        un interfaccia web per la visualizzazione in tempo reale dei dati
+        memorizzati su firebase.
     - job_title: "Software Developer Engineer"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
@@ -77,14 +80,16 @@ experience:
         \justify
         Nel ruolo di Software Developer Engineer mi sono occupato dello
         sviluppo di un applicativo di realtà aumentata e lo sviluppo di plugin
-        per lo screen recording di una scena virtuale nel loro prodotto software. Oltre
-        a questi due progetti ho supportato la codebase del loro strumento software per
-        la realizzazione di scene virtuali di realtà aumentata.
+        per lo screen recording di una scena virtuale nel loro prodotto
+        software. Oltre a questi due progetti ho supportato la codebase del
+        loro strumento software per la realizzazione di scene virtuali di
+        realtà aumentata.
 
         \justify
         I progetti sono stati portati avanti con un team di tre persone
-        seguendo una metodologia waterfall I progetti sono stati realizzati utilizzando C++ come linguaggio di
-        programmazione e alcune librerie tra le quali OpenGL, OpenSG e Kinect SDK.
+        seguendo una metodologia waterfall I progetti sono stati realizzati
+        utilizzando C++ come linguaggio di programmazione e alcune librerie tra
+        le quali OpenGL, OpenSG e Kinect SDK.
     - job_title: "Software Engineer Trainee"
       organization: "Seac02 s.r.l."
       location: "Torino, Italia"
@@ -92,25 +97,26 @@ experience:
       description:
         \justify
         Nel ruolo di Software Developer Trainee mi sono occupato della ricerca
-        e sviluppo di un applicativo per il calcolo dell'illuminazione locale (ambient
-        occlusion) e delle coordinate texture di oggetti tridimensionali che
-        funzionasse per qualsiasi scena tridimensionale data.
+        e sviluppo di un applicativo per il calcolo dell'illuminazione locale
+        (ambient occlusion) e delle coordinate texture di oggetti
+        tridimensionali che funzionasse per qualsiasi scena tridimensionale
+        data.
 
         \justify
         La realizzazione del progetto si articolava di due fasi, una prima in
         cui ho ricercato tra lo stato dell'arte quale approccio potesse essere
         utilizzato per risolvere il problema, mentre nella seconda fase mi sono
         occupata dell'implementazione e della raccolta dei risultati. Il
-        progetto è stato portato avanti sotto la guida di un mentore aziendale seguendo
-        un approccio waterfall.
+        progetto è stato portato avanti sotto la guida di un mentore aziendale
+        seguendo un approccio waterfall.
 
         \justify
         L'applicativo si componeva di tre parti organizzate in cascata, la
         prima si occupava di calcolare le coordinate texture dell'oggetto
-        tridimensionale, la seconda di disporre i vari elementi bidimensionali su di
-        una superficie piana, cercando di ridurre il più possibile lo spazio vuoto, la
-        terza si occupava di calcolare l'illuminazione locale e di salvare il risultato
-        su di un file immagine.
+        tridimensionale, la seconda di disporre i vari elementi bidimensionali
+        su di una superficie piana, cercando di ridurre il più possibile lo
+        spazio vuoto, la terza si occupava di calcolare l'illuminazione locale
+        e di salvare il risultato su di un file immagine.
 
         \justify
         L'applicativo è stato realizzato utilizzando il linguaggio C++ per
@@ -123,43 +129,60 @@ education:
           institution: "School of Entrepreneurship and Innovation"
           location: "Torino, Italia"
           date: "September 2018"
-          long_description: "Inventor is a ten-day prototyping boot-camp in a a makerspace, where university students passionate about technology & innovation can transform their ideas into working prototypes supported by international mentors and experts."
+          long_description:
+            Inventor is a ten-day prototyping boot-camp in a a makerspace,
+            where university students passionate about technology & innovation
+            can transform their ideas into working prototypes supported by
+            international mentors and experts.
         - degree: "Laurea di secondo livello in Ingegneria Informatica"
           institution: "Politecnico di Torino"
           location: "Torino, Italia"
           date: "Laureando"
-          long_description: "Laurea di secondo livello in Ingegneria Informatica con specializzazione in Computer Graphics, attualmente in conseguimento."
-          description: "
-            La laurea ha come argomento lo sviluppo di una metodologia di acquisizione delle proprietà di riflettanza dei materiali.
-            Si compone di una prima parte di sviluppo di un dispositivo fisico di acquisizione che permetta per ogni possibile combinazione luce-camera di acquisire un'immagine.
-            Il dispositivo sarà poi integrato da un software di acqusizione, modifica e riproduzione dei dati acqusiti.
-          "
+          long_description:
+            Laurea di secondo livello in Ingegneria Informatica con
+            specializzazione in Computer Graphics, attualmente in
+            conseguimento.
+          description:
+            La laurea ha come argomento lo sviluppo di una metodologia di
+            acquisizione delle proprietà di riflettanza dei materiali.  Si
+            compone di una prima parte di sviluppo di un dispositivo fisico di
+            acquisizione che permetta per ogni possibile combinazione
+            luce-camera di acquisire un'immagine.  Il dispositivo sarà poi
+            integrato da un software di acqusizione, modifica e riproduzione
+            dei dati acqusiti.
         - degree: "Laurea di primo livello in Ingegneria Informatica"
           institution: "Politecnico di Torino"
           date: "2012"
           location: "Torino, Italia"
           notes: ["Laurea conseguita con la massima valutazione e con lode."]
-          description: "
+          description:
             Il corso di laurea presenta un unico percorso di studi che fornisce
-            agli studenti nozioni ingegneristiche di base ed un'approfondita conoscenza
-            delle principali caratteristiche dei sistemi di elaborazioni delle
-            informazioni, sia nelle componenti hardware sia nelle componenti software.
+            agli studenti nozioni ingegneristiche di base ed un'approfondita
+            conoscenza delle principali caratteristiche dei sistemi di
+            elaborazioni delle informazioni, sia nelle componenti hardware sia
+            nelle componenti software.
 
             Il percorso di studio non prevedeva una prova finale ma offriva la
-            possibilità di comporre una monografia per un'azienda con l'aiuto di un docente
-            e di un tutor aziendale.  La monografia ha come argomento lo sviluppo di un
-            applicativo per la parametrizzazione di una mesh tridimensionale in due
-            dimensioni.  La struttura era quella tipica di una tesi, con uno studio
-            iniziale dello stato dell'arte, una parte implementativa, una sperimentale e
-            una in cui si discutevano i risultati ottenuti.
-          "
-          long_description: "Conseguita nel 2012 la Laurea di primo livello in Ingegneria Informatica con il massimo dei voti (110L) presso il Politecnico di Torino."
+            possibilità di comporre una monografia per un'azienda con l'aiuto
+            di un docente e di un tutor aziendale.  La monografia ha come
+            argomento lo sviluppo di un applicativo per la parametrizzazione di
+            una mesh tridimensionale in due dimensioni.  La struttura era
+            quella tipica di una tesi, con uno studio iniziale dello stato
+            dell'arte, una parte implementativa, una sperimentale e una in cui
+            si discutevano i risultati ottenuti.
+          long_description:
+            Conseguita nel 2012 la Laurea di primo livello in Ingegneria
+            Informatica con il massimo dei voti (110L) presso il Politecnico di
+            Torino.
         - degree: "Diploma di Perito Industriale per l'Informatica"
           institution: "Istituto Tecnico Industriale Statale Pininfarina"
           date: "2008"
           location: "Moncalieri, Italia"
           notes: ["Diploma conseguito con la massima valutazione."]
-          long_description: "Conseguito nel 2008 il Diploma di Perito Industriale per l'Informatica con il massimo dei voti presso l'Istituto Tecnico Industriale Statale Pininfarina di Moncalieri."
+          long_description:
+            Conseguito nel 2008 il Diploma di Perito Industriale per
+            l'Informatica con il massimo dei voti presso l'Istituto Tecnico
+            Industriale Statale Pininfarina di Moncalieri.
     certificates:
         - certificate: "Data Analytics for Business"
           location: "Torino"
