@@ -13,15 +13,19 @@ skills:
       markup_languages: ["LaTex", "HTML", "CSS", "Markdown", "dot", "PlantUML"]
       libraries_frameworks: ["Qt4", "libwebm", "OpenSG", "jupyter", "numpy", "matplotlib", "OpenCV", "OpenGL", "Boost", "ARkit", "Unity", "SSE Extensions"]
     general:
-      software: ["GIMP", "Inkscape", "ImageMagick", "Blender", "AutoCAD", "Inventor", "KiCad"]
-      devops_tools: ["git", "travis-ci", "Makefile", "coala"]
+      software: ["GIMP", "Inkscape", "ImageMagick", "Blender", "AutoCAD", "Inventor", "KiCad", "Jira", "Confluence"]
+      devops_tools: ["git", "travis-ci", "Jenkins", "Makefile", "coala"]
       languages: ["Italian", "English"]
       others: ["Taglio laser", "Utilizzo di software EDA (Electronic Design Automation)", "Arduino", "Amministrazione servizi web: gitlab, Rocket.chat, wallabag, ngnix"]
 experience:
+    - job_title: "Senior Software Engineer"
+      organization: "Ermes Cyber Security"
+      date: "Dicembre 2019"
+      location: "Torino, Italia"
     - job_title: "Mobile Software Engineer"
       organization: "E-Gate Mobile s.r.l."
       location: "Torino, Italia"
-      date: "Agosto 2017 - "
+      date: "Agosto 2017 - Dicembre 2019"
       description: >-
         \justify
         Nel ruolo di Mobile Software Engineer mi sono occupato della
@@ -154,7 +158,6 @@ education:
           institution: "Politecnico di Torino"
           date: "2012"
           location: "Torino, Italia"
-          notes: ["Laurea conseguita con la massima valutazione e con lode."]
           description:
             Il corso di laurea presenta un unico percorso di studi che fornisce
             agli studenti nozioni ingegneristiche di base ed un'approfondita
