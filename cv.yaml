@@ -8,19 +8,19 @@ personal:
     homepage: "https://www.destro.me"
 skills:
     technical:
-      programming_languages: ["C", "C++", "C\\#", "Java", "Kotlin", "Python", "Javascript", "Typescript", "Assembly", "BASH"]
+      programming_languages: ["Kotlin", "Java", "C", "C++", "Rust", "Shell Scripting with bash and zsh)", "C\\#", "Python", "Javascript", "Typescript", "Assembly x86"]
       query_languages: ["SQL", "GraphQL"]
       markup_languages: ["LaTex", "HTML", "CSS", "Markdown", "dot", "PlantUML"]
       libraries_frameworks: ["Qt4", "libwebm", "OpenSG", "jupyter", "numpy", "matplotlib", "OpenCV", "OpenGL", "Boost", "ARkit", "Unity", "SSE Extensions"]
     general:
-      software: ["GIMP", "Inkscape", "ImageMagick", "Blender", "AutoCAD", "Inventor", "KiCad", "Jira", "Confluence"]
+      software: ["Jira", "Confluence", "Bitbucket", "GIMP", "Inkscape", "ImageMagick", "Blender", "AutoCAD", "Inventor", "KiCad"]
       devops_tools: ["git", "travis-ci", "Jenkins", "Makefile", "coala"]
       languages: ["Italian", "English"]
       others: ["Taglio laser", "Utilizzo di software EDA (Electronic Design Automation)", "Arduino", "Amministrazione servizi web: gitlab, Rocket.chat, wallabag, ngnix"]
 experience:
     - job_title: "Senior Software Engineer"
       organization: "Ermes Cyber Security"
-      date: "Dicembre 2019"
+      date: "Dicembre 2019 - ad oggi"
       location: "Torino, Italia"
     - job_title: "Mobile Software Engineer"
       organization: "E-Gate Mobile s.r.l."
